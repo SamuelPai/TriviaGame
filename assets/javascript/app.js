@@ -1,6 +1,8 @@
 var correctAnswers = 0;
 var incorrectAnswers = 0;
 var unaswered = 0;
+var timeRemaining = 10;
+var intervalId;
 
 
 document.getElementById("button").onclick = function test(){
@@ -88,5 +90,42 @@ document.getElementById("button").onclick = function test(){
     else {
         incorrectAnswers++
     }
-    console.log(unaswered);
+    console.log(correctAnswers);
+    document.getElementById("correctAnswers").innerHTML = "Correct Answers: " + correctAnswers;
+    document.getElementById("incorrectAnswers").innerHTML = "Incorrect Answers: " + incorrectAnswers;
+    document.getElementById("unanswered").innerHTML = "Unanswered: " + unaswered;
+
+
+
+}
+
+
+
+function countdownTimer(){
+    intervalId = setInterval(decrement, 1000);
+}
+
+function decrement(){
+    timeRemaining--;
+    document.getElementById("time").innerHTML = ("Time Remaining: " + timeRemaining + " Seconds");
+    if (timeRemaining === 0) {
+        stop();
+    }
+}
+
+function stop() {
+    clearInterval(intervalId)
+    document.getElementById("container").style.display = "none";
+    document.getElementById("endPage").style.display = "block";
+    
+
+
+}
+
+document.getElementById("startButton").onclick = function start(){
+    document.getElementById("startPage").style.display = "none";
+    document.getElementById("container").style.display = "block";
+    countdownTimer();
+
+
 }

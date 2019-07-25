@@ -20,5 +20,19 @@ button {
     font-size: 30px;
     background-color: lightblue;
 }
-#button {
+#startButton {
+    color: white;
+    background-color: red;
+    height: 100px;
+    width: 300px;
+}
+#startPage {
+    background-color: pink;
+ 
+}
+#container {
+    display: none;
+}
+#endPage {
+    display: none;
 }
