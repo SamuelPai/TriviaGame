@@ -32,7 +32,19 @@ button {
 }
 #container {
     display: none;
+    background-color: pink;
+    height: 50%;
+    width: 50%;
+    text-align: center;
+    
+    
 }
 #endPage {
     display: none;
+}
+body {
+    background-color: gray;
+}
+img {
+    margin: 20px;
 }

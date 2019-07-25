@@ -1,7 +1,7 @@
 var correctAnswers = 0;
 var incorrectAnswers = 0;
 var unaswered = 0;
-var timeRemaining = 10;
+var timeRemaining = 120;
 var intervalId;
 
 
@@ -94,6 +94,10 @@ document.getElementById("button").onclick = function test(){
     document.getElementById("correctAnswers").innerHTML = "Correct Answers: " + correctAnswers;
     document.getElementById("incorrectAnswers").innerHTML = "Incorrect Answers: " + incorrectAnswers;
     document.getElementById("unanswered").innerHTML = "Unanswered: " + unaswered;
+    clearInterval(intervalId)
+    document.getElementById("container").style.display = "none";
+    document.getElementById("endPage").style.display = "block";
+
 
 
 
@@ -117,6 +121,8 @@ function stop() {
     clearInterval(intervalId)
     document.getElementById("container").style.display = "none";
     document.getElementById("endPage").style.display = "block";
+    document.getElementById("button").click();
+
     
 
 
