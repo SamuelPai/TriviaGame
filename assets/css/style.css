@@ -51,7 +51,9 @@ button {
 #endPage {
     display: none;
     background-color: lightpink;
-    margin: 10px;
+    height: 780px;
+    border-style: double;
+    overflow: hidden;
 }
 body {
     background-image:url("https://cdn.luxe.digital/media/sites/7/2018/10/30171612/luxury-wellness-fitness-equinox-gym-los-angeles-luxe-digital.jpg");
@@ -76,4 +78,14 @@ img {
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+#box {
+    border: 10px;
+    border-style: solid;
+    border-color: white;
+    float: left;
+    margin-top: -200px;
+}
+#gify {
+    margin-bottom: 390px;
 }
