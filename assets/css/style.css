@@ -1,5 +1,11 @@
-h1 {
+#h1 {
     text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    border: 10px;
+    border-style: solid;
 }
 h2 {
     text-align: center;
@@ -27,15 +33,18 @@ button {
     width: 300px;
 }
 #startPage {
-    background-color: pink;
+    background-color: lightpink;
+    border: 30px;
+    border-color: white;
+    height: 700px;
+    border-style: double;
  
 }
 #container {
     display: none;
-    background-color: pink;
     height: 50%;
     width: 50%;
-    text-align: center;
+    margin: auto;
     
     
 }
@@ -43,8 +52,17 @@ button {
     display: none;
 }
 body {
-    background-color: gray;
+    background-image:url("https://cdn.luxe.digital/media/sites/7/2018/10/30171612/luxury-wellness-fitness-equinox-gym-los-angeles-luxe-digital.jpg");
+    background-size: 1200px 1200px;
 }
 img {
     margin: 20px;
+}
+.backgroundColor {
+    background-color: lightpink;
+    opacity: 0.88;
+
+}
+#time {
+    color: red;
 }

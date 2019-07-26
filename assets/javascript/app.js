@@ -1,7 +1,7 @@
 var correctAnswers = 0;
 var incorrectAnswers = 0;
 var unaswered = 0;
-var timeRemaining = 120;
+var timeRemaining = 121;
 var intervalId;
 
 
