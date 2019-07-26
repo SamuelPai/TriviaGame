@@ -51,7 +51,7 @@ button {
 #endPage {
     display: none;
     background-color: lightpink;
-    height: 780px;
+    height: 770px;
     border-style: double;
     overflow: hidden;
 }
@@ -60,7 +60,7 @@ body {
     background-size: 1200px 1200px;
 }
 img {
-    margin: 20px;
+    /* margin: 20px; */
 }
 .backgroundColor {
     background-color: lightpink;
@@ -89,3 +89,7 @@ img {
 #gify {
     margin-bottom: 390px;
 }
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
