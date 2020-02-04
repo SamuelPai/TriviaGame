@@ -1,5 +1,5 @@
 # TriviaGame
-Week 5 HW: Javascript Assignment 2
+
 This project demonstrated the use of Vanilla Javascript, CSS, and HTML. Using these three aspects, I was able to build a  trivia game that utilizes various principles to test users about their fitness knowledge. 
 
 Getting Started
